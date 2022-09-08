@@ -1,9 +1,11 @@
 -------------------------
-Pytheas
+#Pytheas
 -------------------------
 
 
-Installation instructions
+##Installation instructions
 
-The following instructions have been tested on a newly created Ubuntu 18.04 LTS with Python3.7 on a virtual environment. Create your virtual environment by running python3 -m venv pytheas-venv, and activate it by running source pytheas-venv/bin/activate. Clone the repo to your machine using git git clone https://github.com/cchristodoulaki/Pytheas.git.
+The following instructions have been tested on a newly created Ubuntu 18.04 LTS with Python3.7.12 on a conda environment. Create your conda environment by running conda create --name pytheas-venv python==3.7.12 , 
+and activate it by running conda activate pytheas-venv. 
+Clone the repo to your machine using git git clone 
 
