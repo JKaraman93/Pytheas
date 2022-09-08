@@ -1,16 +1,15 @@
--------------------------
-# Pytheas
--------------------------
 
-
-## Installation instructions
+# Installation instructions
 
 The following instructions have been tested on a newly created Windows 10 with Python3.7.12 on a conda environment. Create your conda environment by running conda create --name pytheas-venv python==3.7.12 , 
 and activate it by running conda activate pytheas-venv. 
 Clone the repo to your machine using git git clone https://github.com/JKaraman93/Pytheas.git .
 
+First, you have to setup and run Pytheas, and then the Extra Component.
 
-README_pytheas.md
+-------------------------
+## Pytheas
+-------------------------
 
 ### Setup
 
@@ -21,7 +20,7 @@ python setup.py sdist bdist_wheel
 pip install  --upgrade --force-reinstall dist/pytheas-0.0.1-py3-none-any.whl
 ```
 
-#### Load trained weights and inference
+### Load trained weights and inference
 There are pretrained Pytheas rules using a set of 2000 Open Data CSV files from Canadian CKAN portals.
 
 E.g.:
@@ -31,3 +30,21 @@ python ppytheas.py infer -w trained_rules.json -f ../../data/examples/demo6.csv 
 ```
 If you want, you can also train Pytheas using your own files and annotations.
 For more details : https://github.com/JKaraman93/Pytheas/edit/master/src/README_pytheas.md
+
+-------------------------
+# Extra Component
+-------------------------
+
+### Install requirements
+
+```
+cd Extra_Component
+pip install -r requirements.txt
+```
+### Inference
+Based on Pytheas output file i.e., inferred_annotation.json, 
+
+```
+python run.py -c ../pytheas/data/examples/demo6.csv
+```
+
