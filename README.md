@@ -47,3 +47,9 @@ The Component uses the Pytheas output file i.e., inferred_annotation.json. You o
 python run.py -c ../pytheas/data/examples/demo6.csv
 ```
 
+### Dashboard
+
+To display the Dashboard, follow the link in terminal e.g Dash is running on http://127.0.0.1:8050/ .
+
+
+
