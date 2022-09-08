@@ -21,10 +21,16 @@ python setup.py sdist bdist_wheel
 pip install  --upgrade --force-reinstall dist/pytheas-0.0.1-py3-none-any.whl
 ```
 
-#### Infer
+#### Load trained weights and inference
+There are pretrained Pytheas rules using a set of 2000 Open Data CSV files from Canadian CKAN portals.
 
 E.g.:
 ```
 cd pytheas
 python ppytheas.py infer -w trained_rules.json -f ../../data/examples/demo6.csv -o inferred_annotation.json
 ```
+
+#####Train from dataset
+
+If you want, you can also train Pytheas using your own files and annotations.
+For more details : https://github.com/JKaraman93/Pytheas/edit/master/src/README_pytheas.md
