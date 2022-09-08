@@ -22,12 +22,9 @@ pip install  --upgrade --force-reinstall dist/pytheas-0.0.1-py3-none-any.whl
 ```
 
 #### Infer
-```
-cd pytheas
-pytheas infer --weights weightfile  --filepath filepath
-```
 
 E.g.:
 ```
+cd pytheas
 python ppytheas.py infer -w trained_rules.json -f ../../data/examples/demo6.csv -o inferred_annotation.json
 ```
