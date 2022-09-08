@@ -7,9 +7,8 @@ Clone the repo to your machine using git git clone https://github.com/JKaraman93
 
 First, you have to setup and run Pytheas, and then the Extra Component.
 
--------------------------
+
 ## Pytheas
--------------------------
 
 ### Setup
 
