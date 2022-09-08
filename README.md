@@ -28,7 +28,7 @@ cd pytheas
 python ppytheas.py infer -w trained_rules.json -f ../../data/examples/demo6.csv -o inferred_annotation.json
 ```
 If you want, you can also train Pytheas using your own files and annotations.
-For more details : https://github.com/JKaraman93/Pytheas/edit/master/src/README_pytheas.md
+For more details : https://github.com/JKaraman93/Pytheas/edit/master/src/README.md
 
 
 # Extra Component
