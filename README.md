@@ -30,9 +30,8 @@ python ppytheas.py infer -w trained_rules.json -f ../../data/examples/demo6.csv 
 If you want, you can also train Pytheas using your own files and annotations.
 For more details : https://github.com/JKaraman93/Pytheas/edit/master/src/README_pytheas.md
 
--------------------------
+
 # Extra Component
--------------------------
 
 ### Install requirements
 
@@ -41,7 +40,8 @@ cd Extra_Component
 pip install -r requirements.txt
 ```
 ### Inference
-Based on Pytheas output file i.e., inferred_annotation.json, 
+
+The Component uses the Pytheas output file i.e., inferred_annotation.json. You only need to specify the CSV file as follows: 
 
 ```
 python run.py -c ../pytheas/data/examples/demo6.csv
