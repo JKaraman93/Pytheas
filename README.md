@@ -9,3 +9,25 @@ The following instructions have been tested on a newly created Windows 10 with P
 and activate it by running conda activate pytheas-venv. 
 Clone the repo to your machine using git git clone https://github.com/JKaraman93/Pytheas.git .
 
+
+README_pytheas.md
+
+### Setup
+
+Package the Pytheas project into a [wheel](https://realpython.com/python-wheels/), and install it using pip:
+```
+cd src
+python setup.py sdist bdist_wheel
+pip install  --upgrade --force-reinstall dist/pytheas-0.0.1-py3-none-any.whl
+```
+
+#### Infer
+```
+cd pytheas
+pytheas infer --weights weightfile  --filepath filepath
+```
+
+E.g.:
+```
+python ppytheas.py infer -w trained_rules.json -f ../../data/examples/demo6.csv -o inferred_annotation.json
+```
