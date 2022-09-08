@@ -1,5 +1,27 @@
 
-# Installation instructions
+# DataBase Management Systems | Project 
+
+## Abstract
+Comma Separated Value (CSV) is one of the most
+important Open Data formats extensively used in a plethora
+of domains because of his simplicity and flexibility in storing
+data. However, data published in this format often does not
+comply to strict specifications, rising a variety of ambiguities
+and making the automated data extraction a challenging task.
+Although the relational data (table) extraction from CSV files
+has not been studied extensively, there is a novel framework
+named Pytheas which can effectively manage this challenge.
+Nevertheless, Pytheas focuses on table discovery which is just
+an intermediate key step in the CSV processing pipeline. In this
+work, I deal with the remaining steps, mainly with data type
+detection one, in order to convert the CSV file in a proper format
+for data analysis purposes and storing in the relational database
+management system PostgreSQL. Moreover, I build a dashboard
+which gives to users a clear data insight and enables them to store
+and
+
+
+## Installation instructions
 
 The following instructions have been tested on a newly created Windows 10 with Python3.7.12 on a conda environment. Create your conda environment by running conda create --name pytheas-venv python==3.7.12 , 
 and activate it by running conda activate pytheas-venv. 
@@ -8,7 +30,7 @@ Clone the repo to your machine using git git clone https://github.com/JKaraman93
 First, you have to setup and run Pytheas, and then the Extra Component.
 
 
-## Pytheas
+## Pytheas #### (Original repo: https://github.com/cchristodoulaki/Pytheas)
 
 ### Setup
 
